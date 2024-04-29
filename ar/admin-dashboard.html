@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جامعة برج العرب التكنولوجية</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Style Footer and header -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .dashboard .container .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 40px;
+      }
+
+      .dashboard .container .row a div {
+        height: 300px;
+        background-color: #164863;
+        border-radius: 6px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        transition: 0.3s box-shadow;
+      }
+      .dashboard .container .row a:hover div {
+        box-shadow: 3px 3px 0 var(--alt-color), 6px 6px 0 var(--third-color),
+          9px 9px 0 var(--fourth-color);
+      }
+
+      .dashboard .container .row a div img {
+        width: 150px;
+        transition: 0.3s transform;
+      }
+
+      .dashboard .container .row a:hover div img {
+        transform: rotate(-20deg);
+      }
+
+      .dashboard .container .row a div h3 {
+        font-size: 30px;
+        transition: 0.3s text-shadow;
+      }
+
+      .dashboard .container .row a:hover div h3 {
+        text-shadow: 2px 2px 0 var(--alt-color), 3px 3px 0 var(--third-color),
+          4px 4px 0 var(--fourth-color);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <div class="top-header">
+      <div class="container">
+        <div class="social">
+          <a href="#" class="social-icon"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="#" class="social-icon"
+            ><i class="fab fa-youtube-square"></i
+          ></a>
+          <a href="#" class="social-icon"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <a href="#" class="social-icon"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+        </div>
+        <a href="sign.html" class="login-btn">تسجيل الدخول</a>
+
+        <a href="../en/index.html" class="change-lang">En</a>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="active">الصفحة الرئيسية</a>
+            </li>
+            <li>
+              <a href="aboutUs.html">عن الجامعة</a>
+            </li>
+
+            <li>
+              <a href="news.html">أخبار الجامعة</a>
+            </li>
+            <li>
+              <a href="gallary.html">معرض الصور</a>
+            </li>
+            <li>
+              <a href="contactUs.html">تواصل معنا</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-header">
+      <div class="container">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="logo" />
+        </a>
+
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="active">الصفحة الرئيسية</a>
+            </li>
+            <li>
+              <a href="aboutUs.html">عن الجامعة</a>
+            </li>
+
+            <li>
+              <a href="news.html">أخبار الجامعة</a>
+            </li>
+            <li>
+              <a href="gallary.html">معرض الصور</a>
+            </li>
+            <li>
+              <a href="contactUs.html">تواصل معنا</a>
+            </li>
+          </ul>
+          <div class="social">
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-youtube-square"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+            <a href="../en/index.html" class="change-lang">En</a>
+          </div>
+          <a href="sign.html" class="login-btn loginBtnSM">تسجيل الدخول</a>
+        </nav>
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- start Dashboard -->
+    <div class="dashboard">
+      <div class="main-title">
+        <h2>لوحة التحكم</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <a href="add-news.html">
+            <div>
+              <img src="imgs/news-icon.png" alt="news-dash" />
+              <h3>التحكم في الاخبار</h3>
+            </div>
+          </a>
+          <a href="add-course.html">
+            <div>
+              <img src="imgs/course-icon.png" alt="course-icon." />
+              <h3>التحكم في الكورسات</h3>
+            </div>
+          </a>
+          <a href="add-file.html">
+            <div>
+              <img src="imgs/pdf.svg" alt="pdf-dash" />
+              <h3>التحكم في الملفات</h3>
+            </div>
+          </a>
+          <a href="signupAdmin.html">
+            <div>
+              <img src="imgs/admin.png" alt="admin-account-dash" />
+              <h3>التحكم في الحسابات</h3>
+            </div>
+          </a>
+          <a href="showMsgs.html">
+            <div>
+              <img src="imgs/envelope.png" alt="admin-account-dash" />
+              <h3>الرسائل</h3>
+            </div>
+          </a>
+          <a href="find-student.html">
+            <div>
+              <img src="imgs/students.png" alt="admin-account-dash" />
+              <h3>الطلاب</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="fixedBtn active">
+      <button>
+        <a href="admin-dashboard.html">
+          <img src="imgs/gear.png" alt="" />
+        </a>
+      </button>
+    </div>
+    <div class="fixedBtnUsers">
+      <button>
+        <a href="courses.html"> C </a>
+      </button>
+    </div>
+
+    <!-- end Dashboard -->
+
+    <!-- Start footer -->
+    <footer class="footer">
+      <div class="footer__parralax">
+        <div class="footer__parralax-trees"></div>
+        <div class="footer__parralax-moto"></div>
+        <div class="footer__parralax-secondplan"></div>
+        <div class="footer__parralax-premierplan"></div>
+        <div class="footer__parralax-voiture"></div>
+      </div>
+      <div class="container">
+        <div class="box">
+          <img src="imgs/logo.png" alt="logo" style="margin-bottom: 20px" />
+          <ul class="social">
+            <li>
+              <a href="#" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="text">
+            جامعة برج العرب التكنولوجية تضم الجامعة كليتين هما:كلية تكنولوجيا
+            الصناعة والطاقة كلية تكنولوجيا العلوم الصحية
+          </p>
+        </div>
+        <div class="box">
+          <ul class="links">
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="aboutUs.html">عن الجامعة</a></li>
+
+            <li><a href="news.html">أخبار الجامعة</a></li>
+            <li><a href="gallary.html">معرض الصور</a></li>
+            <li><a href="contactUs.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <div class="line">
+            <i class="fas fa-map-marker-alt fa-fw"></i>
+            <div class="info">
+              حوض سكرة وأبو حمد، قسم برج العرب، محافظة الإسكندرية
+            </div>
+          </div>
+          <div class="line">
+            <i class="far fa-clock fa-fw"></i>
+            <div class="info">عدد الطلاب (2022) = 1800 طالب</div>
+          </div>
+          <div class="line">
+            <i class="fas fa-phone-volume fa-fw"></i>
+            <div class="info">
+              <span>+20123456789</span>
+              <span>+20198765432</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="JavaScript/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+/* globlal */
+.deletBtn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background: #ff0000c9;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.deletBtn:hover {
+  background: red;
+}
+.downBtn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background: rgba(0, 102, 255, 0.938);
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.downBtn:hover {
+  background: rgb(2, 90, 223);
+}
+
+.my-boxes {
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+}
+.my-boxes .box {
+  margin: 50px 0;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+/* globlal */
+
+/* start add news */
+
+.news-head {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+
+  text-align: start;
+}
+.info .name {
+  margin: 0 10px;
+}
+.info .date-time p {
+  margin: 0;
+}
+.info .date-time {
+  display: flex;
+  align-items: center;
+}
+.info .date-time .time {
+  background: #ccc;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.news-body .text {
+  margin-bottom: 10px;
+}
+.news-body {
+  padding: 0 10px;
+  text-align: center;
+}
+.news-body p,
+.news-body h4 {
+  text-align: start;
+}
+.news-body img {
+  width: 60%;
+}
+.addImg {
+  display: flex;
+  align-items: center;
+}
+.no-news {
+  text-align: center;
+  font-weight: bolder;
+  background: #eee;
+  padding: 20px;
+}
+.not-admin {
+  border: none;
+}
+.box-news {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+@media (max-width: 767px) {
+  .box-course .text img {
+    width: 100%;
+  }
+}
+/* end add news */
+
+/* start add course */
+.content {
+  width: 100%;
+}
+
+.head {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.courses-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.course {
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: auto;
+  height: 100%;
+}
+
+.course img.cover {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.course .p-20 {
+  padding: 20px;
+}
+
+.course h4 {
+  margin: 0;
+}
+
+.course .description {
+  color: #555;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.course .info {
+  padding: 15px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course .info a {
+  text-decoration: none;
+}
+
+.course .title {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.course .btn-shape {
+  transition: transform 0.3s ease-in-out;
+}
+
+.course .btn-shape:hover {
+  transform: translateY(-3px);
+}
+.del-btn {
+  text-align: center;
+  cursor: pointer;
+}
+
+.del-btn button {
+  padding: 13px 16px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.linkCours {
+  text-align: center;
+}
+
+/* end add course */
+
+/* start add file */
+.files-page .file {
+  border: 1px solid #ccc;
+}
+.files-page .file button.close-btn {
+  position: absolute;
+  left: 15px;
+  border: none;
+  background: #ff0000;
+  border-radius: 50%;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+/* end add file */
+
+/* start show data */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+/* end show data */
+
+/* start show msgs */
+.msg {
+  background: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.msg {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.name,
+.email,
+.titleProblem,
+.problem {
+  margin: 10px 0;
+}
+
+span {
+  font-weight: bold;
+  color: #b4b4b4;
+}
+
+.titleProblem {
+  font-size: 1.2rem;
+  color: #0066cc;
+}
+/* end show msgs */

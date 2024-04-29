@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+  <html lang="ar">
+    <head>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>جامعة برج العرب التكنولوجية</title>
+      <link rel="stylesheet" href="css/normalize.css" />
+      <!-- Style Footer and header -->
+      <link rel="stylesheet" href="css/main.css" />
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="css/all.min.css" />
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+        rel="stylesheet"
+      />
+      <style>
+        .spicial {
+          margin-top: 100px;
+        }
+        #studentForm {
+          width: 50%;
+          margin: 28px auto;
+          text-align: center;
+        }
+
+        #studentForm input[type=text] {
+          width: 100%;
+          padding: 10px;
+          border-radius: 6px;
+          border: 2px solid #20506b;
+          font-size: 30px;
+        }
+
+        #studentForm button {
+          width: 100px;
+          height: 39px;
+          border: none;
+          outline: none;
+          color: white;
+          background: #34627a;
+          border-radius: 6px;
+          margin-top: 50px;
+          cursor: pointer;
+          transform: translateX(25%);
+        }
+        h1 {
+          padding-right: 20px;
+          font-size: 40px;
+        }
+        #studentData .container .row {
+          padding: 10px 30px;
+          margin-bottom: 20px;
+          background-color: #20506b;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: white;
+          border-radius: 10px;
+        } 
+
+        #studentData .container .row p {
+          font-size: 25px;
+        }
+
+        #studentData .container .row span {
+          font-size: 30px;
+        }
+        @media (max-width: 620px) {
+          #studentData .container .row p {
+          font-size: 25px;
+        }
+
+        #studentData .container .row span {
+          font-size: 25px;
+        }
+        }
+        
+     label {
+          display: inline-block;
+          width: 150px;
+          text-align: right;
+          margin-right: 10px;
+          
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="email"],
+      input[type="tel"],
+      select {
+          width: 300px;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          margin-top: 10px;
+      }
+
+      button {
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      button:hover {
+          background-color: #0056b3;
+      }
+
+      #studentData {
+          text-align: left;
+          margin-top: 20px;
+      }
+
+      #studentData p {
+          margin: 5px 0;
+      }
+
+      #studentData h2 {
+          color: #007bff;
+      }
+
+      .add-data,#studentFor {
+        width: fit-content;
+        margin: 1px auto;
+      }
+      </style>
+    </head>
+    <body>
+    <!-- Start Header -->
+    <div class="top-header">
+      <div class="container">
+        <div class="social">
+          <a href="#" class="social-icon"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="#" class="social-icon"
+            ><i class="fab fa-youtube-square"></i
+          ></a>
+          <a href="#" class="social-icon"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <a href="#" class="social-icon"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+        </div>
+
+        <a href="sign.html" class="login-btn">تسجيل الدخول</a>
+        <a href="../en/index.html" class="change-lang">En</a>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="active">الصفحة الرئيسية</a>
+            </li>
+            <li>
+              <a href="aboutUs.html">عن الجامعة</a>
+            </li>
+
+            <li>
+              <a href="news.html">أخبار الجامعة</a>
+            </li>
+            <li>
+              <a href="gallary.html">معرض الصور</a>
+            </li>
+            <li>
+              <a href="contactUs.html">تواصل معنا</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="mobile-header">
+      <div class="container">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="logo" />
+        </a>
+
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html" class="active">الصفحة الرئيسية</a>
+            </li>
+            <li>
+              <a href="aboutUs.html">عن الجامعة</a>
+            </li>
+
+            <li>
+              <a href="news.html">أخبار الجامعة</a>
+            </li>
+            <li>
+              <a href="gallary.html">معرض الصور</a>
+            </li>
+            <li>
+              <a href="contactUs.html">تواصل معنا</a>
+            </li>
+          </ul>
+          <div class="social">
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-youtube-square"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+            <a href="../en/index.html" class="change-lang">En</a>
+          </div>
+          <a href="sign.html" class="login-btn login-btnSM">تسجيل الدخول</a>
+        </nav>
+      </div>
+    </div>
+    <!-- End Header -->
+      <!-- Start Search Data -->
+      <div class="main-title">
+        <h2>بحث عن بيانات الطالب</h2>
+      </div>
+      <form id="studentForm">
+        <input type="text" id="name" name="name" required placeholder="أدخل أسم الطالب"/>
+        <button type="submit">بحث</button>
+      </form>
+  
+      <h1>بيانات الطالب : </h1>
+      <div id="studentData" style="margin-bottom: 100px;">
+        <div class="container">
+          <div class="row">
+            <p>
+              إسم الطالب :
+            </p>
+            <span> </span>
+          </div>
+          <div class="row">
+            <p>
+              السن :
+            </p>
+            <span></span>
+          </div>
+          <div class="row">
+            <p>
+              السنة الدراسية :
+            </p>
+            <span></span>
+          </div>
+          <div class="row">
+            <p>
+              العنوان :
+            </p>
+            <span></span>
+          </div>
+          <div class="row">
+            <p>
+              البريد الالكتروني :
+            </p>
+            <span></span>
+          </div>
+          <div class="row">
+            <p>
+              رقم الهاتف :
+            </p>
+            <span></span>
+          </div>
+          <div class="row">
+            <p>
+              النوع :
+            </p>
+            <span></span>
+          </div>
+          <div class="row">
+            <p>
+              البلد :
+            </p>
+            <span></span>
+          </div>
+          <div class="row">
+            
+          <p>
+            المواد الدراسية :
+          </p>
+          <span></span>
+          </div>
+          <div class="row">
+            
+          <p>
+            الهوايات :
+          </p>
+          <span></span>
+          </div>
+        </div>
+      </div>
+      <!-- End Search Data -->
+      <hr >
+      <!-- Start Add Data -->
+      
+      <div class="main-title">
+        <h2 class="spicial">أضافة بيانات الطالب</h2>
+      </div>
+      <div class="add-data">
+        <div class="container">
+          <form id="studentFor">
+            <label for="name">الاسم:</label>
+            <input type="text" id="studentName" name="name" required><br><br>
+            
+            <label for="age">العمر:</label>
+            <input type="number" id="age" name="age" required><br><br>
+    
+            <label for="grade">الصف:</label>
+            <input type="text" id="grade" name="grade" required><br><br>
+    
+            <label for="address">العنوان:</label>
+            <input type="text" id="address" name="address" required><br><br>
+    
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+    
+            <label for="gender">الجنس:</label>
+            <select id="gender" name="gender" required>
+                <option value="ذكر">ذكر</option>
+                <option value="أنثى">أنثى</option>
+            </select><br><br>
+    
+            <label for="nationality">الجنسية:</label>
+            <input type="text" id="nationality" name="nationality" required><br><br>
+    
+    
+            <button type="submit">حفظ البيانات</button>
+        </form>
+        </div>
+      </div>
+      <!-- End Add Data -->
+      <div class="fixedBtn">
+      <button class="userBtn">
+        <a href="admin-dashboard.html">
+          <img src="imgs/gear.png" alt="" />
+        </a>
+      </button>
+     </div>
+    <div class="fixedBtnUsers">
+      <button>
+        <a href="courses.html"> C </a>
+      </button>
+    </div>
+      <!-- Start footer -->
+      <footer class="footer">
+        <div class="footer__parralax">
+          <div class="footer__parralax-trees"></div>
+          <div class="footer__parralax-moto"></div>
+          <div class="footer__parralax-secondplan"></div>
+          <div class="footer__parralax-premierplan"></div>
+          <div class="footer__parralax-voiture"></div>
+        </div>
+        <div class="container">
+          <div class="box">
+            <img src="imgs/logo.png" alt="logo" style="margin-bottom: 20px" />
+            <ul class="social">
+              <li>
+                <a href="#" class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="youtube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="text">
+              جامعة برج العرب التكنولوجية تضم الجامعة كليتين هما:كلية تكنولوجيا
+              الصناعة والطاقة كلية تكنولوجيا العلوم الصحية
+            </p>
+          </div>
+          <div class="box">
+            <ul class="links">
+              <li><a href="index.html">الصفحة الرئيسية</a></li>
+              <li><a href="aboutUs.html">عن الجامعة</a></li>
+
+              <li><a href="news.html">أخبار الجامعة</a></li>
+              <li><a href="gallary.html">معرض الصور</a></li>
+              <li><a href="contactUs.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="line">
+              <i class="fas fa-map-marker-alt fa-fw"></i>
+              <div class="info">
+                حوض سكرة وأبو حمد، قسم برج العرب، محافظة الإسكندرية
+              </div>
+            </div>
+            <div class="line">
+              <i class="far fa-clock fa-fw"></i>
+              <div class="info">عدد الطلاب (2022) = 1800 طالب</div>
+            </div>
+            <div class="line">
+              <i class="fas fa-phone-volume fa-fw"></i>
+              <div class="info">
+                <span>+20123456789</span>
+                <span>+20198765432</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer -->
+      <script src="JavaScript/findStudent.js"></script>
+      <script src="JavaScript/main.js"></script>
+    </body>
+  </html>
+</html>

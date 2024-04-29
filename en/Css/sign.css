@@ -1,0 +1,89 @@
+.login-form,
+.signup-form {
+  padding-top: 50px;
+}
+.login-form .container,
+.signup-form .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-form .container form,
+.signup-form .container form {
+  width: 500px;
+  background-color: #164863;
+  padding: 50px 20px;
+  min-height: 300px;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 3px 3px 0 var(--alt-color), 6px 6px 0 var(--third-color),
+    9px 9px 0 var(--fourth-color);
+}
+
+.login-form .container form div input,
+.signup-form .container form div input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  /* border-radius: 6px; */
+  outline: none;
+}
+
+.login-form .container form div:last-of-type,
+.signup-form .container form div:last-of-type {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-form .container form div button,
+.signup-form .container form div button {
+  background-color: white;
+  color: #164863;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.login-form .container form div button:hover,
+.signup-form .container form div button:hover {
+  box-shadow: 3px 3px 0 var(--alt-color), 6px 6px 0 var(--third-color),
+    9px 9px 0 var(--fourth-color);
+}
+
+.login-form .container p,
+.signup-form .container p {
+  margin-top: 30px;
+}
+
+.login-form .container p.p2 {
+  margin-top: 0px;
+}
+
+.login-form .container p a,
+.signup-form .container p a {
+  color: #164863;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .login-form .container form,
+  .signup-form .container form {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+#signBtn,#creatanaccount {
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,85 @@
+form span {
+  color: white;
+}
+.news-form,
+.add-course,
+.removeDash {
+  padding-top: 50px;
+}
+
+.news-form .container,
+.add-course .container,
+.removeDash .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.news-form .container form,
+.add-course .container form,
+.removeDash .container form {
+  width: 500px;
+  background-color: #164863;
+  padding: 50px 20px;
+  min-height: 300px;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 3px 3px 0 var(--alt-color), 6px 6px 0 var(--third-color),
+    9px 9px 0 var(--fourth-color);
+}
+
+.removeDash .container form {
+  min-height: 200px;
+}
+
+.news-form .container form div input,
+.news-form .container form textarea,
+.add-course .container form div input,
+.removeDash .container form input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  /* border-radius: 6px; */
+  outline: none;
+}
+
+.news-form .container form textarea {
+  max-width: 100%;
+}
+
+.news-form .container form div:last-of-type,
+.add-course .container form div:last-of-type,
+.removeDash .container form div:last-of-type {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.news-form .container form div button,
+.add-course .container form div button,
+.removeDash .container form div button {
+  background-color: white;
+  color: #164863;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s box-shadow;
+}
+
+.news-form .container form div button:hover,
+.removeDash .container form div button:hover,
+.add-course .container form div button:hover {
+  box-shadow: 3px 3px 0 var(--alt-color), 6px 6px 0 var(--third-color),
+    9px 9px 0 var(--fourth-color);
+}
+
+@media (max-width: 767px) {
+  .news-form .container form,
+  .add-course .container form {
+    width: 100%;
+  }
+}
